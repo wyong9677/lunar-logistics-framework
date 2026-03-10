@@ -1,0 +1,4 @@
+Scenario,Feasible,phaseout_t,phaseout_inconsistent,overbuild_excessive,late_spike,M_T,late_window_start,late_max_FE,late_median_FE,term_slack
+A_Baseline,YES,,False,True,False,257416713.93100724,35.0,2896.4658706102323,1103.658880598864,157416713.93100724
+B_Policy,YES,,False,True,False,135377927.44669172,35.0,2639.496026101856,1778.4674771744735,35377927.44669172
+C_Resilience,YES,48.0,True,True,True,285965302.98166686,35.0,28141.57897290783,1.7281727590878488,185965302.98166686

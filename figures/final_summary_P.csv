@@ -1,0 +1,4 @@
+Scenario,Gamma,Resilience,M(T) [Mt],"Phase-out (yr, last-use)",Phaseout m,Solver,Feasible,TermSlack,Total Obj ($B)
+A_Baseline,1e-05,OFF,257.4167139310072,Never,4,failed,YES,1.574e+08,86421.54
+B_Policy,0.08,OFF,135.37792744669173,Never,4,failed,YES,3.538e+07,77839.49
+C_Resilience,0.05,ON,285.96530298166687,48.0,4,failed,YES,1.860e+08,322820.10

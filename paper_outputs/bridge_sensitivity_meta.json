@@ -1,0 +1,33 @@
+{
+  "timestamp_utc": "2026-03-10T06:16:34+00:00",
+  "script": "run_bridge_sensitivity.py",
+  "interpretation_scope": "Campaign-scale bridge sensitivity intended to connect the main scenario results to reduced-model diagnostics. These outputs are campaign-scale full-model results, not reduced-model approximations.",
+  "run_mode": "full",
+  "failure_timing": "relative",
+  "cases": [
+    "mixed_base",
+    "mixed_sefail",
+    "mixed_rocketfail",
+    "mixed_bothfail"
+  ],
+  "params": [
+    "K_max_total_tpy",
+    "delta_eff",
+    "L_R_ton_per_launch",
+    "gamma_env",
+    "C_E_dollars_per_launch"
+  ],
+  "factors": [
+    0.6,
+    0.8,
+    1.0,
+    1.2,
+    1.5
+  ],
+  "policies": [
+    "tau_star",
+    "cost_opt"
+  ],
+  "write_timeseries": false,
+  "output_csv": "/Users/riemannguass/Desktop/Submissions_to_Scientific_Reports/paper_outputs/bridge_sensitivity_summary.csv"
+}

@@ -1,0 +1,8 @@
+{
+  "model_layer": "campaign_scale_full_model",
+  "interpretation_scope": "Primary architecture-comparison claims must be drawn from the campaign-scale full model only.",
+  "delta": 0.1,
+  "baseline_label": "mixed_base",
+  "output_csv": "paper_outputs/tornado_summary.csv",
+  "n_rows": 22
+}

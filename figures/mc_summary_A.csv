@@ -1,0 +1,2 @@
+n_sims,success,success_rate,crashed,infeasible,low_mass,no_phaseout,seed,jitter
+25,22,0.88,0,0,0,3,42,0.05

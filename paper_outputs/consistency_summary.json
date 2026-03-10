@@ -1,0 +1,23 @@
+{
+  "model_layer": "campaign_scale",
+  "entrypoint": "run_consistency_check.py",
+  "policy": "cost_opt",
+  "scenario": "mixed",
+  "run_mode": "full",
+  "failure_timing": "relative",
+  "se_fail": false,
+  "rocket_fail": false,
+  "n_runs": 8,
+  "seed": 42,
+  "init_noise": 0.1,
+  "tau0_jitter": 0.1,
+  "write_timeseries": false,
+  "all_feasible": true,
+  "feasible_fraction": 1.0,
+  "tau_rel_spread": 3.1772095357694134e-13,
+  "cost_rel_spread": 1.5320332901354505e-06,
+  "tol_rel_tau": 0.03,
+  "tol_rel_cost": 0.03,
+  "CONSISTENCY_PASS": true,
+  "report_csv": "/Users/riemannguass/Desktop/Submissions_to_Scientific_Reports/paper_outputs/consistency_report.csv"
+}
