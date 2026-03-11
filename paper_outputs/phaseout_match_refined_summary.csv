@@ -1,0 +1,10 @@
+model_layer,keff_factor,Keff_tpy,JE_target,n_evaluated,n_feasible,match_status,best_gamma,best_JE,best_JE_relerr,best_phaseout_t,best_phaseout_detected,any_phaseout_seen_in_search,min_phaseout_t_seen,iK,iE,eps_mult
+reduced_mature_regime_diagnostic,2.0,935883.6,375552378.49766845,42,24,no_refined_match_best_only,1.0,3623499892.565893,8.648454117268729,,False,False,,0,0,0.05
+reduced_mature_regime_diagnostic,2.0,935883.6,751104756.9953369,42,24,no_refined_match_best_only,1.0,3623499892.565893,3.8242270586343645,,False,False,,0,1,0.1
+reduced_mature_regime_diagnostic,2.0,935883.6,1502209513.9906738,42,24,no_refined_match_best_only,1.0,3623499892.565893,1.4121135293171823,,False,False,,0,2,0.2
+reduced_mature_regime_diagnostic,3.0,1403825.4,375552378.49766845,42,25,no_refined_match_best_only,1.0,1137357299.1366222,2.0284918010276516,,False,False,,1,0,0.05
+reduced_mature_regime_diagnostic,3.0,1403825.4,751104756.9953369,42,25,no_refined_match_best_only,1.0,1137357299.1366222,0.5142459005138258,,False,False,,1,1,0.1
+reduced_mature_regime_diagnostic,3.0,1403825.4,1502209513.9906738,42,24,no_refined_match_best_only,3.9810717055349695e-05,1137358077.0653949,0.2428765318867126,,False,False,,1,2,0.2
+reduced_mature_regime_diagnostic,4.0,1871767.2,375552378.49766845,42,15,no_refined_match_best_only,1e-08,52619723.218757845,0.8598871256540729,,False,False,,2,0,0.05
+reduced_mature_regime_diagnostic,4.0,1871767.2,751104756.9953369,42,15,no_refined_match_best_only,1e-08,52619723.218757845,0.9299435628270365,,False,False,,2,1,0.1
+reduced_mature_regime_diagnostic,4.0,1871767.2,1502209513.9906738,42,15,no_refined_match_best_only,1e-08,52619723.218757845,0.9649717814135182,,False,False,,2,2,0.2
