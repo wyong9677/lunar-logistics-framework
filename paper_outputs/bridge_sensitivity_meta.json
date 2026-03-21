@@ -1,7 +1,12 @@
 {
-  "timestamp_utc": "2026-03-10T06:16:34+00:00",
+  "timestamp_utc": "2026-03-20T09:39:44+00:00",
   "script": "run_bridge_sensitivity.py",
   "interpretation_scope": "Campaign-scale bridge sensitivity intended to connect the main scenario results to reduced-model diagnostics. These outputs are campaign-scale full-model results, not reduced-model approximations.",
+  "notes": [
+    "This layer is suitable for campaign-scale throughput / availability envelope checks.",
+    "Coefficient changes here remain within the adopted planning-scale objective family.",
+    "These outputs can also support reporting-layer alternative proxy summaries."
+  ],
   "run_mode": "full",
   "failure_timing": "relative",
   "cases": [
@@ -12,22 +17,19 @@
   ],
   "params": [
     "K_max_total_tpy",
-    "delta_eff",
-    "L_R_ton_per_launch",
-    "gamma_env",
-    "C_E_dollars_per_launch"
+    "alpha",
+    "r",
+    "delta_eff"
   ],
   "factors": [
-    0.6,
     0.8,
     1.0,
-    1.2,
-    1.5
+    1.2
   ],
   "policies": [
     "tau_star",
     "cost_opt"
   ],
   "write_timeseries": false,
-  "output_csv": "/Users/riemannguass/Desktop/Submissions_to_Scientific_Reports/paper_outputs/bridge_sensitivity_summary.csv"
+  "output_csv": "paper_outputs_bridge_rel_core/bridge_sensitivity_summary.csv"
 }

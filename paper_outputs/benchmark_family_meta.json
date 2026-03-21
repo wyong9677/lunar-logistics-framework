@@ -1,0 +1,111 @@
+{
+  "timestamp_utc": "2026-03-20T09:49:07+00:00",
+  "script": "run_benchmark_family.py",
+  "model_layer": "campaign_scale",
+  "purpose": "Campaign-scale benchmark-family comparison for scale-positioning and external-validity support. These runs do not replace the main stress-test benchmark, but position it relative to additional campaign envelopes.",
+  "run_mode": "full",
+  "failure_timing": "relative",
+  "families": [
+    {
+      "name": "stress_test",
+      "description": "Main campaign-scale stress-test benchmark used in the paper",
+      "overrides": {}
+    },
+    {
+      "name": "moderate_scale",
+      "description": "Lower mass target and smaller operational population, with relaxed campaign-scale cadence caps",
+      "overrides": {
+        "M_goal_tons": 10000000.0,
+        "P_pop": 10000.0,
+        "FE_max_launch_per_yr": 25000.0,
+        "FA_max_launch_per_yr": 50000.0,
+        "A_max_tons": 200000.0
+      }
+    },
+    {
+      "name": "early_infrastructure",
+      "description": "Smaller early-infrastructure campaign with lower cadence and smaller buffer",
+      "overrides": {
+        "M_goal_tons": 1000000.0,
+        "P_pop": 1000.0,
+        "FE_max_launch_per_yr": 5000.0,
+        "FA_max_launch_per_yr": 10000.0,
+        "A_max_tons": 100000.0
+      }
+    }
+  ],
+  "scenarios": [
+    "rocket_only",
+    "se_only",
+    "mixed"
+  ],
+  "policies": [
+    "tau_star",
+    "cost_opt"
+  ],
+  "write_timeseries": false,
+  "n_rows": 18,
+  "output_csv": "paper_outputs_benchmark_family_full/benchmark_family_summary.csv",
+  "base_params": {
+    "M_goal_tons": 100000000.0,
+    "P_pop": 100000.0,
+    "w_ls_kg_per_person_day": 3.75,
+    "rho_recovery": 0.95,
+    "ops_supply_factor": 1.0,
+    "scenario": "mixed",
+    "N_build": 250,
+    "N_ops": 60,
+    "tau_min": 1.0,
+    "tau_max": 400.0,
+    "K_max_total_tpy": 537000.0,
+    "alpha": 0.02,
+    "r": 0.18,
+    "delta_eff": 0.8714,
+    "L_R_ton_per_launch": 125.0,
+    "FE_max_launch_per_yr": 100000.0,
+    "FA_max_launch_per_yr": 200000.0,
+    "A_max_tons": 500000.0,
+    "A_gate_tons": 1000.0,
+    "C_E_dollars_per_launch": 100000000.0,
+    "C_A_dollars_per_launch": 20000000.0,
+    "C_SE_dollars_per_ton": 250.0,
+    "e_E_per_launch": 1275.0,
+    "e_A_per_launch": 450.0,
+    "e_SE_per_ton": 2.0,
+    "gamma_env": 0.0001,
+    "se_failure_active": false,
+    "rocket_failure_active": false,
+    "failure_timing_mode": "relative",
+    "se_fail_t_start": 20.0,
+    "se_fail_duration": 3.0,
+    "se_fail_severity": 0.9,
+    "rocket_fail_t_start": 22.0,
+    "rocket_fail_duration": 2.0,
+    "rocket_fail_severity": 0.5,
+    "se_fail_theta_build": 0.35,
+    "se_fail_frac_build": 0.15,
+    "rocket_fail_theta_build": 0.55,
+    "rocket_fail_frac_build": 0.1,
+    "se_fail_theta_ops": 0.0,
+    "se_fail_frac_ops": 0.0,
+    "rocket_fail_theta_ops": 0.0,
+    "rocket_fail_frac_ops": 0.0,
+    "w_smooth": 0.5,
+    "w_end": 100.0,
+    "eps_tau": 0.05,
+    "stage1_reg": 0.001,
+    "ops_require_rate_each_step": false,
+    "ipopt_max_iter": 40000,
+    "ipopt_tol": 1e-08,
+    "ipopt_acceptable_tol": 0.0001,
+    "ipopt_acceptable_constr_viol_tol": 1e-06,
+    "ipopt_acceptable_iter": 800,
+    "ipopt_bound_relax_factor": 1e-10,
+    "tol_viol_scaled": 1e-06,
+    "model_layer": "campaign_scale_full_model",
+    "practical_accept_rule": [
+      "Solve_Succeeded",
+      "Solved_To_Acceptable_Level"
+    ]
+  }
+}

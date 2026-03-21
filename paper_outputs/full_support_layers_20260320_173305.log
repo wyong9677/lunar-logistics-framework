@@ -1,0 +1,69 @@
+=== [1/6] bridge_rel_core ===
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit https://github.com/coin-or/Ipopt
+******************************************************************************
+
+[OK] wrote summary CSV: paper_outputs_bridge_rel_core/bridge_sensitivity_summary.csv
+[OK] wrote metadata JSON: paper_outputs_bridge_rel_core/bridge_sensitivity_meta.json
+=== [2/6] bridge_cost_core ===
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit https://github.com/coin-or/Ipopt
+******************************************************************************
+
+[OK] wrote summary CSV: paper_outputs_bridge_cost_core/bridge_sensitivity_summary.csv
+[OK] wrote metadata JSON: paper_outputs_bridge_cost_core/bridge_sensitivity_meta.json
+=== [3/6] bridge_cost_extra ===
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit https://github.com/coin-or/Ipopt
+******************************************************************************
+
+[OK] wrote summary CSV: paper_outputs_bridge_cost_extra/bridge_sensitivity_summary.csv
+[OK] wrote metadata JSON: paper_outputs_bridge_cost_extra/bridge_sensitivity_meta.json
+=== [4/6] benchmark_family ===
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit https://github.com/coin-or/Ipopt
+******************************************************************************
+
+[family=stress_test] scenario=rocket_only -> 2 policy rows
+[family=stress_test] scenario=se_only -> 2 policy rows
+[family=stress_test] scenario=mixed -> 2 policy rows
+[family=moderate_scale] scenario=rocket_only -> 2 policy rows
+[family=moderate_scale] scenario=se_only -> 2 policy rows
+[family=moderate_scale] scenario=mixed -> 2 policy rows
+[family=early_infrastructure] scenario=rocket_only -> 2 policy rows
+[family=early_infrastructure] scenario=se_only -> 2 policy rows
+[family=early_infrastructure] scenario=mixed -> 2 policy rows
+[OK] wrote summary CSV: paper_outputs_benchmark_family_full/benchmark_family_summary.csv
+[OK] wrote metadata JSON: paper_outputs_benchmark_family_full/benchmark_family_meta.json
+=== [5/6] eta_matched ===
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit https://github.com/coin-or/Ipopt
+******************************************************************************
+
+[se] structure=no_disruption_reference -> 2 policy rows
+[se] structure=early_baseline_shape -> 2 policy rows
+[se] structure=mid_baseline_shape -> 2 policy rows
+[se] structure=late_baseline_shape -> 2 policy rows
+[se] structure=mid_short_severe -> 2 policy rows
+[se] structure=mid_long_mild -> 2 policy rows
+[OK] wrote summary CSV: paper_outputs_eta_matched_full/eta_matched_timing_summary.csv
+[OK] wrote metadata JSON: paper_outputs_eta_matched_full/eta_matched_timing_meta.json
+=== [6/6] proxy_report ===
+[OK] wrote summary CSV: paper_outputs_proxy_report/proxy_reporting_summary.csv
+[OK] wrote metadata JSON: paper_outputs_proxy_report/proxy_reporting_meta.json
+=== ALL DONE ===
